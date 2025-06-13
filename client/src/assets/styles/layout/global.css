@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: var(--kameo-font-family);
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: #000;
+  background-color: #f6f8f8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.kameo-app {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+}
+
+.kameo-app__layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow-y: auto;
+}
+
+.kameo-app__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  padding: 20px;
+  background: #7c3aed;
+  position: relative;
+}
+
+.kameo-app__kameo-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.kameo-app__title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #2d3436;
+  line-height: 1.1;
+}
+
+.kameo-app__logo {
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+}
+
+.kameo-app__logo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.kameo-app__main {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.kameo-app__view {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.kameo-app__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.kameo-app__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .kameo-app__actions {
+    display: none;
+  }
+}

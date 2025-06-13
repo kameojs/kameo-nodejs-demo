@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kameo - Form editor and viewer</title>
+
+    <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-alpha.13/dist/styles/themes/default.css" />
+    <script type="module" src="https://early.webawesome.com/webawesome@3.0.0-alpha.13/dist/webawesome.loader.js"></script>
+
+    <script type="module">
+      // Note: autoloader does not work if wa component is inside another lit component.
+      import 'https://early.webawesome.com/webawesome@3.0.0-alpha.13/dist/components/input/input.js';
+      import 'https://early.webawesome.com/webawesome@3.0.0-alpha.13/dist/components/select/select.js';
+      import 'https://early.webawesome.com/webawesome@3.0.0-alpha.13/dist/components/checkbox/checkbox.js';
+      import 'https://early.webawesome.com/webawesome@3.0.0-alpha.13/dist/components/button/button.js';
+    </script>
+  </head>
+  <body>
+    <div class="kameo-app">
+      <div class="kameo-app__layout">
+
+        <div class="kameo-app__head">
+          <div class="kameo-app__kameo-logo">
+            <div class="kameo-app__logo" style="width: 80px; height: 80px;">
+              <img class="kameo-app__logo-img" src="/logo.svg" alt="kameo">
+            </div>
+            <div class="kameo-app__title">Kameo</div>
+          </div>
+        </div>
+
+        <div class="kameo-app__main">
+          <div class="kameo-app__view">
+
+            <div class="kameo-app__actions">
+              <div class="kameo-app__base-form base-form">
+                <button>Create base form</button>
+              </div>
+
+              <div class="kameo-app__import-form import-form">
+                <button>Import form</button>
+              </div>
+
+              <div class="kameo-app__export-form export-form">
+                <button>Export form</button>
+              </div>
+
+              <div class="kameo-app__clear-content clear-content">
+                <button>Clear content</button>
+              </div>
+
+              <div class="kameo-app__document-mode document-mode">
+                <select>
+                  <option value="" selected disabled>--Document mode--</option>
+                  <option value="edit">Edit</option>
+                  <option value="view">View</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="kameo-app__content">
+              <div id="kameo" class="kameo-container"></div>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

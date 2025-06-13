@@ -1,0 +1,24 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@kameo/core": "^0.0.25",
+    "@kameo/extension-slash-command": "^0.0.25",
+    "@kameo/extension-text-style": "^0.0.25",
+    "@kameo/extensions": "^0.0.25",
+    "@kameo/form-kit": "^0.0.25",
+    "@kameo/pm": "^0.0.25",
+    "@kameo/starter-kit": "^0.0.25",
+    "ky": "^1.8.1"
+  }
+}
