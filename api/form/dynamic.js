@@ -1,7 +1,6 @@
 const { createKameo, createBaseForm } = kameoModule;
 
 async () => {
-  const kameo = createKameo();
-  const data = createBaseForm(kameo);
+  const data = createBaseForm(createKameo());
   return { status: 'ok', data };
 };
