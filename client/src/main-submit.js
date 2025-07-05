@@ -1,5 +1,7 @@
+import '@awesome.me/webawesome/dist/styles/themes/default.css';
 import '@kameo/core/style/theme.css';
 import './assets/styles/main.css';
+import '@kameo/core/webawesome.js';
 
 import { Kameo } from '@kameo/core';
 import { StarterKit } from '@kameo/starter-kit';

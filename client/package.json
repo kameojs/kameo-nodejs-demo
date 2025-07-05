@@ -12,13 +12,14 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@kameo/core": "^0.0.25",
-    "@kameo/extension-slash-command": "^0.0.25",
-    "@kameo/extension-text-style": "^0.0.25",
-    "@kameo/extensions": "^0.0.25",
-    "@kameo/form-kit": "^0.0.25",
-    "@kameo/pm": "^0.0.25",
-    "@kameo/starter-kit": "^0.0.25",
+    "@awesome.me/webawesome": "^3.0.0-beta.2",
+    "@kameo/core": "^0.0.29",
+    "@kameo/extension-slash-command": "^0.0.29",
+    "@kameo/extension-text-style": "^0.0.29",
+    "@kameo/extensions": "^0.0.29",
+    "@kameo/form-kit": "^0.0.29",
+    "@kameo/pm": "^0.0.29",
+    "@kameo/starter-kit": "^0.0.29",
     "ky": "^1.8.1"
   }
 }
