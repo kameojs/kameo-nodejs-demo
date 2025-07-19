@@ -56,8 +56,8 @@ const init = () => {
     }
   });
 
-  kameo.on('submitted', (event) => {
-    console.log(`on 'submitted' event`, { event });
+  kameo.on('submit:result', (event) => {
+    console.log(`on 'submit:result' event`, { event });
 
     const data = Object.fromEntries(
       Object.entries(event.formData).map(([_key, data]) => [data.name, data.value])
