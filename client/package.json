@@ -13,13 +13,13 @@
   },
   "dependencies": {
     "@awesome.me/webawesome": "^3.0.0-beta.3",
-    "@kameo/core": "^0.0.33",
-    "@kameo/extension-slash-command": "^0.0.33",
-    "@kameo/extension-text-style": "^0.0.33",
-    "@kameo/extensions": "^0.0.33",
-    "@kameo/form-kit": "^0.0.33",
-    "@kameo/pm": "^0.0.33",
-    "@kameo/starter-kit": "^0.0.33",
+    "@kameo/core": "^0.0.35",
+    "@kameo/extension-slash-command": "^0.0.35",
+    "@kameo/extension-text-style": "^0.0.35",
+    "@kameo/extensions": "^0.0.35",
+    "@kameo/form-kit": "^0.0.35",
+    "@kameo/pm": "^0.0.35",
+    "@kameo/starter-kit": "^0.0.35",
     "ky": "^1.8.1"
   }
 }

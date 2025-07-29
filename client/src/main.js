@@ -46,7 +46,7 @@ const init = () => {
   kameo.on('submit', async (event) => {
     console.log(`on 'submit' event`, { event, formData: event.formData });
     await new Promise((resolve) => setTimeout(resolve, 3000));
-    event.setSubmitResult({
+    event.setResult({
       success: true,
       message: 'Form is submitted',
     });

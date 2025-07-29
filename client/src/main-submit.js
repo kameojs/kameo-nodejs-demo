@@ -44,12 +44,12 @@ const init = () => {
         throw new Error('Server error'); 
       }
 
-      event.setSubmitResult({
+      event.setResult({
         success: true,
         message: 'Form is submitted',
       });
     } catch (err) {
-      event.setSubmitResult({
+      event.setResult({
         success: false,
         message: err.message,
       });
